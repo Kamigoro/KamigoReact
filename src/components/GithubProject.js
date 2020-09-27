@@ -27,7 +27,7 @@ class GithubProject extends Component {
         return (
             <Card className="mb3" style={{minWidth:"13rem", height:"15rem", overflow: "hidden"}}>
                 <Card.Header style={{backgroundColor:"#A2A2A9"}}>
-                    <a href={this.project.html_url} target="_blank" rel="noopener noreferrer" style={{color:"black", fontFamily:""}} className="text-truncate">
+                    <a href={this.project.html_url} target="_blank" rel="noopener noreferrer" style={{color:"black"}} className="text-truncate">
                         <b>{this.project.name}</b>
                     </a>
                     <img src={this.project.owner.avatar_url} alt="github avatar" style={{height:"30px", width:"auto", float:"right"}}/>
