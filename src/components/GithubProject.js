@@ -13,7 +13,7 @@ class GithubProject extends Component {
     getLanguageColor(){
         switch(this.project.language){
             case 'C#':
-                return {color: "#250067"};
+                return {color: "#189F20"};
             case 'Java':
                 return {color:"#E5312D"};
             case 'HTML':
@@ -25,18 +25,11 @@ class GithubProject extends Component {
 
     render() {
         return (
-            <Card className="mb3" style={{minWidth:"13rem", height:"15rem", overflow: "hidden"}}>
-                <Card.Header style={{backgroundColor:"#A2A2A9"}}>
-                    <a href={this.project.html_url} target="_blank" rel="noopener noreferrer" style={{color:"black"}} className="text-truncate">
-                        <b>{this.project.name}</b>
-                    </a>
-                    <img src={this.project.owner.avatar_url} alt="github avatar" style={{height:"30px", width:"auto", float:"right"}}/>
-                </Card.Header>
-                <Card.Body>
-                    <Card.Title style={this.getLanguageColor()}>{this.project.language}</Card.Title>
-                    <Card.Text >{this.project.description}</Card.Text>
-                </Card.Body>
-            </Card>
+            <tr>
+                <td><a href={this.project.html_url} target="_blank" rel="noopener noreferrer">{this.project.name}</a></td>
+                <td>{this.project.description}</td>
+                <td style={this.getLanguageColor()}>{this.project.language}</td>
+            </tr>
         );
     }
 }

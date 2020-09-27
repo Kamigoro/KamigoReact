@@ -17,13 +17,21 @@ class ProjectList extends Component {
 
     render() {
         return (
-            <Carousel id="projectCarousel" style={{maxWidth:"30rem", marginLeft:"auto", marginRight:"auto"}}>
-                {this.state.projects.map((project) => (
-                    <Carousel.Item>
+            <table className="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Language</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {this.state.projects.map((project) => (
                         <GithubProject key={project.id} project={project}/>
-                    </Carousel.Item>
-                ))}
-            </Carousel>
+                    ))}
+                </tbody>
+            </table>
+                
         );
     }
 }
