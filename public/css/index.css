@@ -1,0 +1,70 @@
+body {
+    background-color: #3D3F3E !important;
+}
+
+.banner{
+    background-image: url('../images/Website-Banner.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.avatar {
+    width: 150px;
+    height: auto;
+}
+
+.myName {
+    text-align: center;
+    color: white;
+}
+
+ul{
+    text-align: center;
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+}
+
+.socialIcon{
+    height: 50px;
+    width: auto;
+}
+
+.projectIntroduction {
+    color: white;
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.projectList {
+    margin: auto;
+    width: 60%;
+}
+
+.carousel-control-prev {
+    height: 25px !important;
+    width: 50px !important;
+    margin-top: 13rem;
+    background-color: #A2A2A9;
+  }
+
+
+  .carousel-control-next {
+    height: 25px !important;
+    width: 50px !important;
+    margin-top: 13rem;
+    background-color: #A2A2A9;
+  }
+
+  footer {
+    background-color:white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+}
