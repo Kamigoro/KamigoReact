@@ -2,6 +2,11 @@ body {
     background-color: #3D3F3E !important;
 }
 
+.pageContainer{
+    position: relative;
+  min-height: 100vh;
+}
+
 .banner{
     background-image: url('../images/Website-Banner.png');
     background-repeat: no-repeat;
@@ -47,9 +52,7 @@ li{
 footer {
     background-color:white;
     position: absolute;
-    left: 0;
     bottom: 0;
     height: 50px;
     width: 100%;
-    overflow: hidden;
 }
