@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import GithubProject from './GithubProject';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Carousel } from 'react-bootstrap';
 
 class ProjectList extends Component {
 
