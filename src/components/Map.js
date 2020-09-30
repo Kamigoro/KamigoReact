@@ -14,7 +14,7 @@ class Map extends Component {
 
         var homePopup = new mapboxgl.Popup();
         homePopup.setHTML("<h2>My current home</h2><p>Been living there for quite a while now, wouldn't recommend it.</p>");
-        var homeMarker = new mapboxgl.Marker()
+        new mapboxgl.Marker()
         .setLngLat([4.467660, 50.418366])
         .setPopup(homePopup)
         .addTo(map);
@@ -22,7 +22,7 @@ class Map extends Component {
 
         var tokyoPopup = new mapboxgl.Popup();
         tokyoPopup.setHTML("<h2>My dream location</h2><p>If the event present itself, I want to live in Tokyo.</p>");
-        var tokyoMarker = new mapboxgl.Marker()
+        new mapboxgl.Marker()
         .setLngLat([139.798698, 35.689182])
         .setPopup(tokyoPopup)
         .addTo(map);
